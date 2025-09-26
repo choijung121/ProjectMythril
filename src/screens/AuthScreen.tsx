@@ -18,10 +18,8 @@ const AuthScreen: React.FC = () => {
         });
 
         if (error) {
-            Alert.alert('Error Signing In', error.message);
-        } else {
-            Alert.alert('Success', 'Signed in successfully!');
-        }
+            Alert.alert('Sorry, incorrect password or email address', error.message);
+        } 
         setLoading(false);
     }
 
@@ -46,7 +44,7 @@ const AuthScreen: React.FC = () => {
 
     return (
         <View style={styles.container}>
-            <Text style={styles.header}>Welcome to Family Photos</Text>
+            <Text style={styles.header}>Project Mythril</Text>
             <Text style={styles.title}>Login</Text>
             <TextInput
                 style={styles.input}

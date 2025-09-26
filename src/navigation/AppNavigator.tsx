@@ -42,7 +42,7 @@ const AppNavigator: React.FC = () => {
             <Stack.Navigator>
                 {session && session.user ? (
                     // If a session exists, show the HomeScreen
-                    <Stack.Screen name="Home" component={HomeScreen} options={{ title: 'Family Photos' }} />
+                    <Stack.Screen name="Home" component={HomeScreen} options={{ title: 'Gallery' }} />
                 ) : (
                     // Otherwise, show the AuthScreen
                     <Stack.Screen name="Auth" component={AuthScreen} options={{ headerShown: false }} />

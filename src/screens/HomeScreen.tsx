@@ -11,7 +11,7 @@ const HomeScreen: React.FC = () => {
   }
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Photo Gallery</Text>
+      <Text style={styles.title}>Mythril Gallery</Text>
       <Text style={styles.subtitle}>Welcome, Admin!</Text>
       <Button title="Sign Out" onPress={handleSignOut} />
     </View>
